@@ -1,0 +1,59 @@
+.banner {
+    background: $primary-color;
+    padding: 3.5rem 0;
+    h2 {
+        color: white;
+        font-size: 2.5rem;
+    }
+    p {
+        color: rgb(231, 231, 231);
+        font-weight: 200;
+        margin-top: .7rem;
+    }
+}
+// about
+.about {
+    h5 {
+        color: $primary-color;
+        margin: 1rem 0;
+    }
+    p{
+        color: #a7a7a7;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+
+    .each-content {
+        margin-bottom: 2rem;
+        h5 {
+            color: black;
+        }
+        span {
+            font-size: 3.3rem;
+            margin-right: 2rem;
+            color: rgb(59, 59, 59);
+        }
+    }
+}
+
+.about-team {
+    h5{
+        margin: {
+            top: .8rem;
+            bottom: 2.5rem;
+        }
+    }
+    .each-member  {
+        box-shadow: 1px 0px 20px 2px rgb(238, 233, 233);
+        h5{
+            margin: 0;
+        }
+        h6 {
+            text-transform: uppercase;
+            color: $primary-color;
+            font-weight: 300;
+        }
+    }
+}
+
+
