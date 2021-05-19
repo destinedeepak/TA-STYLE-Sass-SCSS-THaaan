@@ -13,13 +13,13 @@
 <body>
     <header class="header">
         <div class="upper-header ">
-            <div class="container flex">
+            <div class="container flex med-column med-align-center">
                 <div class="contact">
                     <a href="tel:9876849757"><span><i class="fas fa-phone"></i></span> 987-684-9757</a>
                     <a href="mailto:someone@example.com"><span><i class="fas fa-envelope"></i></span> someone@example.com</a>
                 </div>
                 <nav class="social-nav">
-                    <ul class="flex"> 
+                    <ul class="flex med-justify-center"> 
                         <li>
                             <a><i class="fab fa-facebook-square"></i></a>
                         </li>
@@ -36,23 +36,41 @@
                 </nav>
             </div>
         </div>
-        <div class="lower-header bg">
+        <div class="lower-header bg relative">
            <div class="container flex align-center">
             <a href="#" class="brand-name">Uni <small>TECH</small></a>
+            <label class="toggle-label" for="toggle"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle">
             <nav class="navbar">
-                <ul class="flex">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <!-- <i class="fas fa-chevron-down"></i> -->
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                <ul class="flex med-column">
+                    <li><a href="index.html">Home</a></li>
+                    <li ><a href="about-us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="pages relative">
+                        <a href="#">Pages 
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="drop-down">
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li class="active" ><a href="error-404.html">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="blog relative">
+                        <a href="#">Blog 
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="drop-down">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
            </div>
         </div>
-    </header>  
+    </header> 
     <main>
         <section class="banner padding">
             <div class="container text-center">
@@ -64,7 +82,7 @@
             <div class="container text-center">
                 <h3>Page Not Found!</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vitae quo magnam ex. Cum eligendi nobis <br> dolorem vitae Lorem ipsum dolor sit amet</p>
-                <div class="flex">
+                <div class="flex med-column">
                     <article>
                         <span><i class="fas fa-location-arrow"></i></span>
                         <h5>Address</h5>
@@ -87,7 +105,7 @@
     <footer class="footer padding">
         <div class="container">
 
-            <div class="flex">
+            <div class="flex med-column med-align-center">
                 <div class="flex-28 reach-us">
                     <ul> 
                         <li>
@@ -154,7 +172,7 @@
                     </ul>
                 </div>
                 <div class="follow-us-nav flex-10">
-                    <ul class="flex">
+                    <ul class="flex ">
                         <li>
                             <a><i class="fab fa-facebook-square"></i></a>
                         </li>
