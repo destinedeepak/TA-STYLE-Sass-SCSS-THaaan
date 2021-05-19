@@ -1,0 +1,130 @@
+.product {
+    p {
+        color: #6c6e70;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: {
+            top: 1rem;
+            bottom: 4rem;
+        }
+    }
+    article {
+        .image-container {
+            width: 5.5rem;
+        }
+        p {
+            color: #38393b;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    html{
+        font-size:14px;
+    }
+
+    .container{
+        max-width: 720px;
+    }
+    /* flex  */
+    .med-wrap{
+        flex-wrap: wrap;
+    }
+    .med-column{
+        flex-direction: column;
+    }
+    .med-align-center{
+        align-items: center;
+    }
+    .med-justify-center {
+        justify-content: center;
+    }
+    .med-full-width{
+       width: 100%; 
+    }
+    .med-flex-35 {
+        flex: 0 1 35%;
+    }
+    .med-flex-48 {
+        flex: 0 1 48%;
+    }
+    .med-flex-100{
+        flex: 0 1 100%;
+        margin: 1rem 0;
+    }
+    .med-text-center {
+      
+    }
+    /* header  */
+    .lower-header{
+        padding: 1rem 0;
+
+        .toggle-label {
+            font-size: 3rem;
+            display: inline-block;
+        }
+        .brand-name {
+            font-size: 3rem;
+        }
+
+        #toggle:checked ~ .navbar{
+            display: inline-block;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 6.7rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            background: white;
+            height: 100vh;
+            display: none;
+
+            li {
+                padding: 0;
+                margin-bottom: 2rem;
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .drop-down {
+            top: 3rem;
+            left: 0;
+            width: 15rem;
+            right: 0;
+            margin: 0 auto;
+            z-index: 1;
+        }
+    }
+
+    // medium screen 
+
+    // hero 
+    article {
+        margin-bottom: 2rem;
+    }
+    .hero {
+        section {
+            height: auto;
+        }
+    }
+    .team-sec2 {
+        padding-top: 2rem;
+        text-align: center ;
+    }
+    .footer {
+        text-align: center;
+        .follow-us-nav {
+            li{
+                margin-right:1rem ;
+            }
+        }
+    }
+     
+}

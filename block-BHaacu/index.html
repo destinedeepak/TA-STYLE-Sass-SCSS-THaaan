@@ -13,13 +13,13 @@
 <body>
     <header class="header">
         <div class="upper-header ">
-            <div class="container flex">
+            <div class="container flex med-column med-align-center">
                 <div class="contact">
                     <a href="tel:9876849757"><span><i class="fas fa-phone"></i></span> 987-684-9757</a>
                     <a href="mailto:someone@example.com"><span><i class="fas fa-envelope"></i></span> someone@example.com</a>
                 </div>
                 <nav class="social-nav">
-                    <ul class="flex"> 
+                    <ul class="flex med-justify-center"> 
                         <li>
                             <a><i class="fab fa-facebook-square"></i></a>
                         </li>
@@ -36,25 +36,43 @@
                 </nav>
             </div>
         </div>
-        <div class="lower-header bg">
+        <div class="lower-header bg relative">
            <div class="container flex align-center">
             <a href="#" class="brand-name">Uni <small>TECH</small></a>
+            <label class="toggle-label" for="toggle"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle">
             <nav class="navbar">
-                <ul class="flex">
-                    <li class="active"><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <!-- <i class="fas fa-chevron-down"></i> -->
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                <ul class="flex med-column">
+                    <li  class="active" ><a href="index.html">Home</a></li>
+                    <li ><a href="about-us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="pages relative">
+                        <a href="#">Pages 
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="drop-down">
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="error-404.html">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="blog relative">
+                        <a href="#">Blog 
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="drop-down">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
            </div>
         </div>
     </header>
     <main>
-            <section class="hero">
+    <section class="hero">
         <div class="container">
             <section>
                 <h1 class="uppercase">best buissness <br> service</h1>
@@ -67,7 +85,7 @@
         <div class="container text-center">
             <h3>Our Services</h3>
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing</h5>
-            <div class="flex">
+            <div class="flex med-column">
                 <article class="flex-32">
                     <div class="image-container">
                         <img src="./assets/media/consulting.svg" alt="" class="full-width">
@@ -103,7 +121,7 @@
         </div>
     </section>
     <section class="team-sec1 padding">
-        <div class="container flex text-center">
+        <div class="container flex text-center med-column">
             <article flex-48>
                 <div class="img-container">
                     <img class="full-width" src="./assets/media/consulting.svg" alt="">
@@ -129,7 +147,7 @@
         </div>
     </section>
     <section class="team-sec2">
-        <div class="container flex align-center padding">
+        <div class="container flex align-center padding med-column">
             <article class="flex-48">
                 <h3>Industry Leader in <br> Consulting Service</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos atque ut exercitationem, ea eligendi inventore perspiciatis voluptatum rerum, eaque, repellat necessitatibus vel animi dolore dolor?</p>
@@ -168,7 +186,7 @@
     <footer class="footer padding">
         <div class="container">
 
-            <div class="flex">
+            <div class="flex med-column med-align-center">
                 <div class="flex-28 reach-us">
                     <ul> 
                         <li>
@@ -235,7 +253,7 @@
                     </ul>
                 </div>
                 <div class="follow-us-nav flex-10">
-                    <ul class="flex">
+                    <ul class="flex ">
                         <li>
                             <a><i class="fab fa-facebook-square"></i></a>
                         </li>

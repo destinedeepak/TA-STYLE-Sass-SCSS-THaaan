@@ -13,13 +13,13 @@
 <body>
     <header class="header">
         <div class="upper-header ">
-            <div class="container flex">
+            <div class="container flex med-column med-align-center">
                 <div class="contact">
                     <a href="tel:9876849757"><span><i class="fas fa-phone"></i></span> 987-684-9757</a>
                     <a href="mailto:someone@example.com"><span><i class="fas fa-envelope"></i></span> someone@example.com</a>
                 </div>
                 <nav class="social-nav">
-                    <ul class="flex"> 
+                    <ul class="flex med-justify-center"> 
                         <li>
                             <a><i class="fab fa-facebook-square"></i></a>
                         </li>
@@ -36,18 +36,36 @@
                 </nav>
             </div>
         </div>
-        <div class="lower-header bg">
+        <div class="lower-header bg relative">
            <div class="container flex align-center">
             <a href="#" class="brand-name">Uni <small>TECH</small></a>
+            <label class="toggle-label" for="toggle"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle">
             <nav class="navbar">
-                <ul class="flex">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <!-- <i class="fas fa-chevron-down"></i> -->
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                <ul class="flex med-column">
+                    <li><a href="index.html">Home</a></li>
+                    <li ><a href="about-us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="pages relative">
+                        <a href="#">Pages 
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="drop-down">
+                            <li class="active" ><a href="pricing.html">Pricing</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="error-404.html">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="blog relative">
+                        <a href="#">Blog 
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="drop-down">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
            </div>
@@ -60,58 +78,57 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus modi temporibus unde</p>
             </div>
         </section>
-        <section class="pricing-table">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil hic sint aliquam ratione eveniet exercitationem dignissimos repellendus, esse quidem veniam</p>
-            <div class="flex">
-                <ul class="each-packages flex-48">
-                    <li><h6>Free</h6></li>
+        <section class="pricing-table padding bg">
+           <div class="container text-center">
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, est ratione eligendi quidem praesentium nihil odio nobis <br> nulla eius expedita Lorem ipsum dolor sit amet</p>
+               <div class="flex med-column">
+                <ul class="flex-32">
+                    <li><h5>Free</h5></li>
                     <li> <h2>$0</h2> </li>
-                    <li class="license">Single Pricing</li>
-                    <li class="line"></li>
-                    <li class="feature"><span class="checked-icon"><i class="fas fa-check"></i></span> 50 courses a day</li>
-                    <li class="feature"><span class="checked-icon"><i class="fas fa-check"></i></span>4 forums a month</li>
-                    <li class="feature"><span class="checked-icon"><i class="fas fa-check"></i></span>16 chapters a day</li>
-                    <li class="feature unmarked-features-color"><span class="unchecked-icon"><i class="fas fa-times"></i></span>Private lessond once a week</li>
-                    <li class="feature unmarked-features-color"><span class="unchecked-icon"><i class="fas fa-times"></i></span>Get weekly reward</li>
-                    <li>
-                        <a class="btn-secondary btn-packages" href="#">Get Started</a>
-                    </li>
-                </ul>
-                <ul class="each-packages flex-48">
-                    <li class="h2-heading">Most Popular</li>
-                    <li class="packages-text">It is long established fact that a reader will distracted by readable </li>
-                    <li class="price">48</li>
-                    <li class="license"></li>
+                    <li class="category"><span>Single Pricing</span></li>
                     <li class="includes">Includes:</li>
-                    <li class="feature"><span class="checked-icon"><i class="fas fa-check"></i></span>4 forums a month</li>
-                    <li class="feature"><span class="checked-icon"><i class="fas fa-check"></i></span>16 chapters a day</li>
-                    <li class="feature unmarked-features-color"><span class="checked-icon"><i class="fas fa-check"></i></span>Private lessond once a week</li>
-                    <li class="feature unmarked-features-color"><span class="checked-icon"><i class="fas fa-check"></i></span>Get weekly reward</li>
+                    <li><span>- Single Site</span> </li>
+                    <li><span>- Cloud Storge</span> </li>
+                    <li><span>- 1 UI Template</span> </li>
+                    <li><span>- No Support</span> </li>
                     <li>
-                        <a class="btn-secondary btn-packages btn-package-active " href="#">Get Started</a>
+                        <a class="btn-secondary" href="#">Buy Now</a>
                     </li>
                 </ul>
-                <ul class="each-packages flex-48">
-                    <li class="h2-heading">Most Popular</li>
-                    <li class="packages-text">It is long established fact that a reader will distracted by readable </li>
-                    <li class="price">48</li>
-                    <li class="line"></li>
-                    <li class="feature"><span class="checked-icon"><i class="fas fa-check"></i></span> 50 courses a day</li>
-                    <li class="feature"><span class="checked-icon"><i class="fas fa-check"></i></span>4 forums a month</li>
-                    <li class="feature"><span class="checked-icon"><i class="fas fa-check"></i></span>16 chapters a day</li>
-                    <li class="feature unmarked-features-color"><span class="checked-icon"><i class="fas fa-check"></i></span>Private lessond once a week</li>
-                    <li class="feature unmarked-features-color"><span class="checked-icon"><i class="fas fa-check"></i></span>Get weekly reward</li>
+                <ul class="flex-32">
+                    <li><h5>Basic</h5></li>
+                    <li> <h2>$12</h2> </li>
+                    <li class="category"><span>Single Pricing</span></li>
+                    <li class="includes">Includes:</li>
+                    <li><span>- Single Site</span> </li>
+                    <li><span>- Cloud Storge</span> </li>
+                    <li><span>- 1 UI Template</span> </li>
+                    <li><span>- No Support</span> </li>
                     <li>
-                        <a class="btn-secondary btn-packages btn-package-active " href="#">Get Started</a>
+                        <a class="btn-secondary" href="#">Buy Now</a>
+                    </li>
+                </ul>
+                <ul class="flex-32">
+                    <li><h5>Premium</h5></li>
+                    <li> <h2>$40</h2> </li>
+                    <li class="category"><span>Single Pricing</span></li>
+                    <li class="includes">Includes:</li>
+                    <li><span>- Single Site</span> </li>
+                    <li><span>- Cloud Storge</span> </li>
+                    <li><span>- 1 UI Template</span> </li>
+                    <li><span>- No Support</span> </li>
+                    <li>
+                        <a class="btn-secondary" href="#">Buy Now</a>
                     </li>
                 </ul>
             </div>
+           </div>
         </section>
     </main>  
     <footer class="footer padding">
         <div class="container">
 
-            <div class="flex">
+            <div class="flex med-column med-align-center">
                 <div class="flex-28 reach-us">
                     <ul> 
                         <li>
@@ -178,7 +195,7 @@
                     </ul>
                 </div>
                 <div class="follow-us-nav flex-10">
-                    <ul class="flex">
+                    <ul class="flex ">
                         <li>
                             <a><i class="fab fa-facebook-square"></i></a>
                         </li>
